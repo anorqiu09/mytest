@@ -4,13 +4,13 @@ This is just a demonstration how to dockerize a web application which runs over 
 
 How to build
 
-	docker build --rm -t SZ-G8M4X72.morningstar.com:6000/mywebapp .
+	docker build --rm -t mywebapp .
 
-The command above will build a docker image based SZ-G8M4X72.morningstar.com:6000/centos:6.6, and also get httpd and mywebapp installed.
+The command above will build a docker image based centos:6.6, and also get httpd and mywebapp installed.
 
 How to Run
 	
- 	docker run --name mywebapp -p 80:80 -d SZ-G8M4X72.morningstar.com:6000/mywebapp
+ 	docker run --name mywebapp -p 80:80 -d mywebapp
 
 The comand above will run the docker image as a container instance with name mywebapp, and also expose the tcp port 80 to its host.
  
